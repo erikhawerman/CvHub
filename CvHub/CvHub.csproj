@@ -317,6 +317,10 @@
       <Project>{B3F6A71A-8772-4A2E-9A79-FAA3CD36B826}</Project>
       <Name>Data</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Services\helpservices.csproj">
+      <Project>{5F6357C6-6727-41CD-9755-B5338C9A1E2A}</Project>
+      <Name>helpservices</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

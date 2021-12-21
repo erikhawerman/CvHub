@@ -90,6 +90,10 @@
     <Compile Include="Migrations\202112211411022_changedmodels.designer.cs">
       <DependentUpon>202112211411022_changedmodels.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112211518546_changedmodelsss.cs" />
+    <Compile Include="Migrations\202112211518546_changedmodelsss.designer.cs">
+      <DependentUpon>202112211518546_changedmodelsss.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Education.cs" />
     <Compile Include="Models\PreviousExperience.cs" />
@@ -147,6 +151,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112211411022_changedmodels.resx">
       <DependentUpon>202112211411022_changedmodels.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211518546_changedmodelsss.resx">
+      <DependentUpon>202112211518546_changedmodelsss.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
