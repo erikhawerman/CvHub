@@ -15,7 +15,6 @@ namespace Data
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Mail { get; set; }
         public int Visits { get; set; }
         //public System.DateTime BirthDate { get; set; }
         public string Gender { get; set; }
