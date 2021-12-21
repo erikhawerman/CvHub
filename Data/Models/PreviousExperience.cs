@@ -11,5 +11,16 @@ namespace Data.Models
     {
         [Key]
         public int Id { get; set; }
+
+        public DateTime StartYear { get; set; }
+        public DateTime EndYear { get; set; }
+        [Required]
+        public string WorkplaceName { get; set; }
+
+        [Required] public string WorkplaceTitle { get; set; }
+
+        public string Description { get; set; }
+
+
     }
 }

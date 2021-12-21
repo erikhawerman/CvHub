@@ -11,5 +11,18 @@ namespace Data.Models
     {
         [Key]
         public int Id { get; set; }
+
+        [Required]
+        public DateTime  StartYear { get; set; }
+        public DateTime EndYear { get; set; }
+        [Required]
+        public string SchoolName { get; set; }
+        [Required]
+        public string EducationName { get; set; }
+
+        public string Description { get; set; }
+
+
+
     }
 }
