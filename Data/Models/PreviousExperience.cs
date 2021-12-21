@@ -21,6 +21,8 @@ namespace Data.Models
 
         public string Description { get; set; }
 
+        public ApplicationUser User { get; set; }
+
 
     }
 }

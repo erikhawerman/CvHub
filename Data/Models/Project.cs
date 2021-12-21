@@ -12,7 +12,7 @@ namespace Data.Models
     {
         [Key]
         public int Id { get; set; }
-        public ICollection<ApplicationUser> Users { get; set; }
+        public virtual ICollection<ApplicationUser> Users { get; set; }
         public string Description { get; set; }
         public ApplicationUser Creator { get; set; }
     }

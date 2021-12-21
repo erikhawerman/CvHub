@@ -86,6 +86,10 @@
     <Compile Include="Migrations\202112211401507_changeduser.designer.cs">
       <DependentUpon>202112211401507_changeduser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112211411022_changedmodels.cs" />
+    <Compile Include="Migrations\202112211411022_changedmodels.designer.cs">
+      <DependentUpon>202112211411022_changedmodels.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Education.cs" />
     <Compile Include="Models\PreviousExperience.cs" />
@@ -140,6 +144,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112211401507_changeduser.resx">
       <DependentUpon>202112211401507_changeduser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211411022_changedmodels.resx">
+      <DependentUpon>202112211411022_changedmodels.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

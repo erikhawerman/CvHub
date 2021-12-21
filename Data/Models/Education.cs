@@ -21,6 +21,7 @@ namespace Data.Models
         public string EducationName { get; set; }
 
         public string Description { get; set; }
+        public ApplicationUser User { get; set; }
 
 
 
