@@ -66,9 +66,25 @@
     <Compile Include="Migrations\202112191848130_expanded-IdentityUser.designer.cs">
       <DependentUpon>202112191848130_expanded-IdentityUser.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202112210904219_kanske.cs" />
-    <Compile Include="Migrations\202112210904219_kanske.designer.cs">
-      <DependentUpon>202112210904219_kanske.cs</DependentUpon>
+    <Compile Include="Migrations\202112211145528_AddedPropsToAspUser.cs" />
+    <Compile Include="Migrations\202112211145528_AddedPropsToAspUser.designer.cs">
+      <DependentUpon>202112211145528_AddedPropsToAspUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112211156411_test.cs" />
+    <Compile Include="Migrations\202112211156411_test.designer.cs">
+      <DependentUpon>202112211156411_test.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112211159184_testigen.cs" />
+    <Compile Include="Migrations\202112211159184_testigen.designer.cs">
+      <DependentUpon>202112211159184_testigen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112211219285_testtest.cs" />
+    <Compile Include="Migrations\202112211219285_testtest.designer.cs">
+      <DependentUpon>202112211219285_testtest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202112211401507_changeduser.cs" />
+    <Compile Include="Migrations\202112211401507_changeduser.designer.cs">
+      <DependentUpon>202112211401507_changeduser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Education.cs" />
@@ -110,8 +126,20 @@
     <EmbeddedResource Include="Migrations\202112191848130_expanded-IdentityUser.resx">
       <DependentUpon>202112191848130_expanded-IdentityUser.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202112210904219_kanske.resx">
-      <DependentUpon>202112210904219_kanske.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202112211145528_AddedPropsToAspUser.resx">
+      <DependentUpon>202112211145528_AddedPropsToAspUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211156411_test.resx">
+      <DependentUpon>202112211156411_test.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211159184_testigen.resx">
+      <DependentUpon>202112211159184_testigen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211219285_testtest.resx">
+      <DependentUpon>202112211219285_testtest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112211401507_changeduser.resx">
+      <DependentUpon>202112211401507_changeduser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

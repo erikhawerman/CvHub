@@ -83,8 +83,8 @@ namespace CvHub.Models
         public string FirstName { get; set; }
         [Display(Name = "Last name")]
         public string LastName { get; set; }
-        [Display(Name = "Age")]
-        public int Age { get; set; }
+        //[Display(Name = "Birthdate")]
+        //public System.DateTime BirthDate { get; set; }
         [Display(Name = "Gender")]
         public string Gender { get; set; }
     }
