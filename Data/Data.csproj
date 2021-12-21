@@ -66,6 +66,10 @@
     <Compile Include="Migrations\202112191848130_expanded-IdentityUser.designer.cs">
       <DependentUpon>202112191848130_expanded-IdentityUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112210904219_kanske.cs" />
+    <Compile Include="Migrations\202112210904219_kanske.designer.cs">
+      <DependentUpon>202112210904219_kanske.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Education.cs" />
     <Compile Include="Models\PreviousExperience.cs" />
@@ -105,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112191848130_expanded-IdentityUser.resx">
       <DependentUpon>202112191848130_expanded-IdentityUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112210904219_kanske.resx">
+      <DependentUpon>202112210904219_kanske.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
