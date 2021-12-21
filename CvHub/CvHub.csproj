@@ -321,6 +321,10 @@
       <Project>{5F6357C6-6727-41CD-9755-B5338C9A1E2A}</Project>
       <Name>helpservices</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{BD2AB756-7492-40C4-BC04-46BF0E68337F}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
