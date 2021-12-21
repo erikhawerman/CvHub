@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace CvHub.Models
@@ -83,8 +84,8 @@ namespace CvHub.Models
         public string FirstName { get; set; }
         [Display(Name = "Last name")]
         public string LastName { get; set; }
-        //[Display(Name = "Birthdate")]
-        //public System.DateTime BirthDate { get; set; }
+        [Display(Name = "Birthdate")]
+        public string BirthDate { get; set; }
         [Display(Name = "Gender")]
         public string Gender { get; set; }
     }
