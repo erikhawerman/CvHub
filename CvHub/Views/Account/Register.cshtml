@@ -1,20 +1,8 @@
-﻿@using System.Web.Services.Description
-@model CvHub.Models.RegisterViewModel
+﻿@model CvHub.Models.RegisterViewModel
 @{
     ViewBag.Title = "Register";
 }
-@functions{
 
-    public static DateTime getDateTime(string stringDate)
-    {
-        int dayDate = Int32.Parse(stringDate.Substring(0, 2));
-        int monthDate = Int32.Parse(stringDate.Substring(3, 2));
-        int yearDate = Int32.Parse(stringDate.Substring(6, 4));
-        return new DateTime(yearDate, monthDate, dayDate);
-    }
-}
-
-}
 <h2>@ViewBag.Title.</h2>
 
 @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
@@ -42,30 +30,6 @@
         </div>
     </div>
     <div class="form-group">
-        @Html.LabelFor(m => m.FirstName, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.FirstName, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.LastName, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.LastName, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.BirthDate, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.EditorFor(m => m.BirthDate, new { id = "BirthDate" })
-        </div>
-    </div>
-    <div class="form-group">
-        @Html.LabelFor(m => m.Gender, new { @class = "col-md-2 control-label" })
-        <div class="col-md-10">
-            @Html.TextBoxFor(m => m.Gender, new { @class = "form-control" })
-        </div>
-    </div>
-    <div class="form-group">
         <div class="col-md-offset-2 col-md-10">
             <input type="submit" class="btn btn-default" value="Register" />
         </div>
@@ -80,7 +44,7 @@
     <script src="@Url.Content("~/Scripts/jquery-ui-1.13.0.min.js")"></script>
     <script type="text/javascript">
         $(function () {
-            $('#BirthDate').datepicker({ changeMonth: true, changeYear: true, yearRange: "1900:" + new Date().getFullYear(), dateFormat: "yy-mm-dd"});
+            $('#BirthDate').datepicker({ changeMonth: true, changeYear: true, yearRange: "1900:"+new Date().getFullYear()});
         })
     </script>
 }
