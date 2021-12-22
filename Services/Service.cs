@@ -11,10 +11,9 @@ namespace Services
     {
         public static DateTime getDateTime(string stringDate)
         {
-            int yearDate = Int32.Parse(stringDate.Substring(0, 4));
-            int monthDate = Int32.Parse(stringDate.Substring(5, 2));
-            int dayDate = Int32.Parse(stringDate.Substring(8, 2));
-           
+            int dayDate = Int32.Parse(stringDate.Substring(0, 2));
+            int monthDate = Int32.Parse(stringDate.Substring(3, 2));
+            int yearDate = Int32.Parse(stringDate.Substring(6, 4));
             return new DateTime(yearDate, monthDate, dayDate);
         }
     }
