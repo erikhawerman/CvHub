@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace CvHub.Models
@@ -80,6 +79,18 @@ namespace CvHub.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
+
+        //public string FirstName { get; set; }
+        //[Display(Name = "Last name")]
+        //public string LastName { get; set; }
+        ////[Display(Name = "Birthdate")]
+        ////public System.DateTime BirthDate { get; set; }
+        //[Display(Name = "Gender")]
+        //public string Gender { get; set; }
+    }
+
+    public class RegisterCVViewModel
+    {
         [Display(Name = "First name")]
         public string FirstName { get; set; }
         [Display(Name = "Last name")]
