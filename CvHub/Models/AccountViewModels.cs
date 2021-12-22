@@ -89,7 +89,7 @@ namespace CvHub.Models
         //public string Gender { get; set; }
     }
 
-    public class RegisterCVModel
+    public class RegisterCVViewModel
     {
         [Display(Name = "First name")]
         public string FirstName { get; set; }

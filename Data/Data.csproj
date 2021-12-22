@@ -87,6 +87,7 @@
       <DependentUpon>202112211401507_changeduser.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CV.cs" />
     <Compile Include="Models\Education.cs" />
     <Compile Include="Models\PreviousExperience.cs" />
     <Compile Include="Models\Project.cs" />

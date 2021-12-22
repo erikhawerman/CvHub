@@ -10,6 +10,7 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using CvHub.Models;
 using Data;
+using Data.Models;
 
 namespace CvHub.Controllers
 {
@@ -152,7 +153,7 @@ namespace CvHub.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender};
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email};
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
@@ -173,7 +174,7 @@ namespace CvHub.Controllers
             return View(model);
         }
 
-        public ActionResult RegisterCV(RegisterCV model)
+        public ActionResult RegisterCV(RegisterCVViewModel model)
         {
             if (ModelState.IsValid)
             {
