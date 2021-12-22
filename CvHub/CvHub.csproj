@@ -295,6 +295,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\MyProfilePage\MyProfilePage.cshtml" />
     <Content Include="Views\MyProfilePage\Index.cshtml" />
+    <Content Include="Views\Account\RegisterCV.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
