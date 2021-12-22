@@ -166,7 +166,7 @@ namespace CvHub.Controllers
                     // var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     // await UserManager.SendEmailAsync(user.Id, "Confirm your account", "Please confirm your account by clicking <a href=\"" + callbackUrl + "\">here</a>");
 
-                    return RedirectToAction("RegisterCV", "Account");
+                    return View("RegisterCV");
                 }
                 AddErrors(result);
             }
@@ -175,21 +175,18 @@ namespace CvHub.Controllers
             return View(model);
         }
 
-        public ActionResult RegisterCV()
-        {
-            var model = new RegisterCVViewModel();
-            return View(model);
-        }
-
 
         public ActionResult RegisterCV(RegisterCVViewModel model)
         {
             if (ModelState.IsValid)
             {
-                var database = new ApplicationDbContext();
+                using (var database = new ApplicationDbContext())
+                {
                 var creator = User.Identity.GetUserId();
-                //var CV = new CV {FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender, BirthDate = ForSaftey.getDateTime(model.BirthDate) };
-
+                var CV = new CV { FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender, BirthDate = ForSaftey.getDateTime(model.BirthDate) };
+                database.CVs.Add(CV);
+                database.SaveChanges();
+                }
                 return RedirectToAction("Index", "Home");
             }
             return View(model);
