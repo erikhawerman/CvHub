@@ -95,6 +95,7 @@
       <DependentUpon>202112211518546_changedmodelsss.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\CV.cs" />
     <Compile Include="Models\Education.cs" />
     <Compile Include="Models\PreviousExperience.cs" />
     <Compile Include="Models\Project.cs" />
