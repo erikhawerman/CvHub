@@ -20,5 +20,6 @@ namespace Data.Models
         public ICollection<Education> Educations { get; set; }
         public ICollection<PreviousExperience> PreviousExperience { get; set; }
         public DateTime BirthDate { get; set; }
+        public string Creator { get; set; }
     }
 }

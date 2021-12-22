@@ -183,7 +183,7 @@ namespace CvHub.Controllers
                 using (var database = new ApplicationDbContext())
                 {
                 var creator = User.Identity.GetUserId();
-                var CV = new CV { FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender, BirthDate = ForSaftey.getDateTime(model.BirthDate) };
+                var CV = new CV { FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender, BirthDate = ForSaftey.getDateTime(model.BirthDate), Creator = creator};
                 database.CVs.Add(CV);
                 database.SaveChanges();
                 }
