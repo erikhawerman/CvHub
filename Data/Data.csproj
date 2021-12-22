@@ -94,6 +94,10 @@
     <Compile Include="Migrations\202112221038262_changedeverythingg.designer.cs">
       <DependentUpon>202112221038262_changedeverythingg.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202112221153329_changedeverythinggg.cs" />
+    <Compile Include="Migrations\202112221153329_changedeverythinggg.designer.cs">
+      <DependentUpon>202112221153329_changedeverythinggg.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CV.cs" />
     <Compile Include="Models\Education.cs" />
@@ -155,6 +159,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202112221038262_changedeverythingg.resx">
       <DependentUpon>202112221038262_changedeverythingg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202112221153329_changedeverythinggg.resx">
+      <DependentUpon>202112221153329_changedeverythinggg.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
