@@ -11,6 +11,7 @@ using Microsoft.Owin.Security;
 using CvHub.Models;
 using Data;
 using Data.Models;
+using Services;
 
 namespace CvHub.Controllers
 {
@@ -174,15 +175,24 @@ namespace CvHub.Controllers
             return View(model);
         }
 
+        public ActionResult RegisterCV()
+        {
+            var model = new RegisterCVViewModel();
+            return View(model);
+        }
+
+
         public ActionResult RegisterCV(RegisterCVViewModel model)
         {
             if (ModelState.IsValid)
             {
                 var database = new ApplicationDbContext();
                 var creator = User.Identity.GetUserId();
-                var CV = new CV {FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender};
+                //var CV = new CV {FirstName = model.FirstName, LastName = model.LastName, Gender = model.Gender, BirthDate = ForSaftey.getDateTime(model.BirthDate) };
 
+                return RedirectToAction("Index", "Home");
             }
+            return View(model);
         }
         //
         // GET: /Account/ConfirmEmail

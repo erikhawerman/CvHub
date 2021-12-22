@@ -96,7 +96,7 @@ namespace CvHub.Models
         [Display(Name = "Last name")]
         public string LastName { get; set; }
         [Display(Name = "Birthdate")]
-        public System.DateTime BirthDate { get; set; }
+        public string BirthDate { get; set; }
         [Display(Name = "Gender")]
         public string Gender { get; set; }
     }

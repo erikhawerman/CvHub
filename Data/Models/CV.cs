@@ -16,5 +16,6 @@ namespace Data.Models
         public ICollection<Project> Projects { get; set; }
         public ICollection<Education> Educations { get; set; }
         public ICollection<PreviousExperience> PreviousExperience { get; set; }
+        public DateTime BirthDate { get; set; }
     }
 }
